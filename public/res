@@ -1,0 +1,356 @@
+/*  Generals */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+*{
+    transition: all .5s ease-out !important;
+}
+
+
+h1, h2, h3, h4, h5, h6, span, a, pre, code, p, button, input, select, textarea{
+    font-family:'Playfair Display' !important;
+}
+
+body{
+    background: white;
+}
+
+.outline{
+    background: transparent !important;
+    border: 1px solid white;
+}
+
+
+
+.c-imagenes{
+    margin: 10px;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding-bottom: 20px;
+}
+
+.c-imagenes div{
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.c-imagenes .detalle{
+    height: 100%;
+    background: rgba(244, 67, 54, 0.59);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    width: 100%;
+}
+
+.c-imagenes .detalle:hover{
+    
+    opacity: 1 !important;
+}
+
+.b-parallax{
+    background-attachment: fixed;
+}
+
+.ampliar{
+    cursor: pointer;
+}
+
+.point{
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 100%;
+}
+
+.datepicker{
+    width: 200px !important;
+}
+
+.datepicker--nav{
+    
+    height: 28px !important;
+
+}
+
+.alinear-h{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.alinear-v{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid white;
+     box-shadow: 0 1px 0 0 white;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+   input[type="text"], input[type="number"]{
+       border-bottom: 1px solid white !important;
+   }
+    
+/*-----------------------------------------------*/
+
+/*---------------------- Navegacion ---------------- */
+#navegacion{
+    height: 60px;
+    width: 100%;
+    background:rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    color: white;
+    padding: 0px 20px 10px 10px;   
+}
+
+#navegacion ul{
+    justify-content: flex-end; 
+    align-items:center; 
+}
+#navegacion li{
+    cursor: pointer;
+    padding: 5px;
+}
+
+#navegacion li.item:hover{
+    border-bottom: 1px solid #f44336 ;    
+}
+
+#navegacion a{
+    color: white;
+}
+/*-----------------------------------------------*/
+
+
+/*---------------------- Header ---------------- */
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover; 
+    color: white;
+}
+
+header h1{
+    text-align: center;
+    background:transparent;
+    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.65);
+}
+/*-----------------------------------------------*/
+
+
+
+/* -------------------------------Platos---------------------*/
+
+#platos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    justify-content: center;
+    overflow: auto;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+}
+
+/*-----------------------------------------------*/
+
+/* -------------------------------reservacion---------------------*/
+#reservacion{
+    padding: 10px;
+    height: 102vh;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;       
+    justify-content: center;
+    text-align:center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+}
+#reservacion h3{
+    text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.65);    
+    
+}
+
+#reservacion .input-field label{
+    color: white;
+}
+
+#reservacion form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    width:75%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.29);
+    color: white !important;
+    padding: 10px;
+}
+
+
+#reservacion form div{
+    margin:10px !important;
+}
+
+@media (max-width:768px){
+    #reservacion form{
+        width:66%;  
+    }
+}
+@media (max-width:425px){
+    #reservacion form{
+        width:75%;  
+    }
+}
+/*-----------------------------------------------*/
+
+
+/* -------------------------------Nosotros---------------------*/
+
+#nosotros{
+    width: 100%;
+    height: auto;
+    background: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width:425px){
+    #nosotros{
+        flex-direction: column-reverse !important;
+    }
+}
+
+#nosotros #historia{
+    flex:1;
+    padding: 0px 20px 20px 20px;
+}
+
+#nosotros #img{
+    flex:1;
+    min-width: 320px !important;
+}
+/*-----------------------------------------------*/
+
+/*--------------------------- Contacto------------ */
+
+#contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contacto #datos{
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#contacto #datos .caja{
+    background: rgba(0, 0, 0, 0.3);
+    margin: 2px;
+    color: white;
+    text-align: center;
+    width: 230px;
+    height: 200px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.65);
+    padding: 10px;
+    
+}
+
+#contacto a{
+    color: white;
+    margin: 5px;
+    font-size: 1.2em;
+}
+
+#contacto a:hover{
+    border-bottom: 1px solid #f44336;
+}
+/*----------------------------------------*/
+
+/*----------------------- Footer -----------------------*/
+footer{
+    height: 60px;
+    background: #333;
+    color: white;
+}
+/*----------------------------------------------------------*/
+
+/* Medias */
+@media (max-width:425px){
+    h1{
+        font-size: 3.8em !important;
+    }
+
+    h3{
+        font-size: 2.5em !important;
+    }
+}
